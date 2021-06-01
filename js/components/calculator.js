@@ -2,7 +2,7 @@ class Calculator {
     constructor(selector) {
         this.selector = selector;
 
-        this.DOM = null;
+        this.DOM = document.querySelector('body');
         this.buttonsData = [
             { title: 'C', color: 'sviesus' },
             { title: '+/-', color: 'sviesus' },
@@ -26,7 +26,7 @@ class Calculator {
             { title: '=', color: 'raudonas' },
         ];
 
-        this.init();
+        this.render();
     }
 
     init() {
@@ -42,9 +42,33 @@ class Calculator {
     }
 
     render() {
-        let HTML = '';
+        let HTML = `<main class="calc-turinys">
+        <div class="atsakymas">45</div>
+        <div class="lygties-dalis">10+15+20=45</div>
+        <div class="mygtuku-dalis"></div>
+        <div class="button sviesus">C</div>
+        <div class="button sviesus">+/-</div>
+        <div class="button sviesus">%</div>
+        <div class="button tamsus">/</div>
+        <div class="button balti">1</div>
+        <div class="button balti">2</div>
+        <div class="button balti">3</div>
+        <div class="button tamsus">*</div>
+        <div class="button balti">4</div>
+        <div class="button balti">5</div>
+        <div class="button balti">6</div>
+        <div class="button tamsus">-</div>
+        <div class="button balti">7</div>
+        <div class="button balti">8</div>
+        <div class="button balti">9</div>
+        <div class="button tamsus">+</div>
+        <div class="button balti">0</div>
+        <div class="button balti">.</div>
+        <div class="button balti">&lt</div>
+        <div class="button raudonas">=</div>
+    </main>`;
 
-        this.DOM.innerHTML = HTML;
+        this.DOM.insertAdjacentHTML('beforeend', HTML);
     }
 }
 
