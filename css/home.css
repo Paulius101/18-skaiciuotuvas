@@ -1,0 +1,6 @@
+@import './base/reset.css';
+@import './components/calculator.css';
+
+body {
+  padding: 40px;
+}
