@@ -38,6 +38,10 @@ class Calculator {
     }
 
     isValidSelector() {
+        if (typeof this.selector !== 'string' ||
+            this.selector === '') {
+            return false;
+        }
         return true;
     }
 
