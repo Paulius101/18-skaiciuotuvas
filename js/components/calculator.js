@@ -2,7 +2,7 @@ class Calculator {
     constructor(selector) {
         this.selector = selector;
 
-        this.DOM = null;
+        this.DOM = document.querySelector(selector);
         this.buttonsData = [
             { title: 'C', color: 'sviesus' },
             { title: '+/-', color: 'sviesus' },
