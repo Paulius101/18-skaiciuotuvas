@@ -2,7 +2,7 @@ class Calculator {
     constructor(selector) {
         this.selector = selector;
 
-        this.DOM = document.querySelector('body');
+        this.DOM = null;
         this.buttonsData = [
             { title: 'C', color: 'sviesus' },
             { title: '+/-', color: 'sviesus' },
@@ -26,7 +26,7 @@ class Calculator {
             { title: '=', color: 'raudonas' },
         ];
 
-        this.render();
+        this.init();
     }
 
     init() {
