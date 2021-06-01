@@ -7,7 +7,7 @@
   transform: translate(-50%, -50%);
   border: 1px solid #808080;
   border-radius: 18px;
-  background-color: grey;
+  background-color: #eff1f5;
 }
 
 .calc-turinys > .atsakymas {
@@ -19,7 +19,7 @@
   margin-top: 40px;
   margin-right: 15px;
   margin-left: 15px;
-  color: darkgray;
+  color: #606168;
   font-size: 40px;
 }
 
@@ -29,7 +29,7 @@
   width: 280px;
   height: 30px;
   text-align: right;
-  color: lightgrey;
+  color: #97999d;
 }
 
 .calc-turinys > .button {
@@ -40,6 +40,7 @@
   display: inline-block;
   padding: 15px;
   text-align: center;
+  color: #636365;
 }
 
 .button.balti {
@@ -47,13 +48,14 @@
 }
 
 .button.sviesus {
-  background-color: lightgrey;
+  background-color: #e0e2e6;
 }
 
 .button.tamsus {
-  background-color: darkgray;
+  background-color: #b2b3bb;
 }
 
 .button.raudonas {
-  background-color: red;
+  background-color: #ff5467;
+  color: white;
 }
