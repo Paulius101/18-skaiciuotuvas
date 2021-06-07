@@ -62,7 +62,10 @@
 }
 
 .mygtuku-dalis > .button:hover {
+  box-shadow: 1px 2px;
   background-color: antiquewhite;
+  height: 51px;
+  width: 51px;
 }
 
 .button.balti {
