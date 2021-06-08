@@ -5,13 +5,16 @@
   align-items: center;
   width: 300px;
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 40%;
   border: none;
   border-radius: 18px;
   background: linear-gradient(45deg, #e0e2e6, #eff1f5);
   box-shadow: 2.5px 5px 2px 0px darkgray;
+}
+
+.calc-turinys:hover {
+  transform: scale(1.1);
 }
 
 .ekraniukas {
