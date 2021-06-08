@@ -19,6 +19,19 @@
   justify-content: column;
   flex-wrap: wrap;
 }
+
+.ekraniukas:hover {
+  animation-name: ekraniukoEfektas;
+  animation-duration: 2s;
+  border-radius: 5%;
+}
+
+@keyframes ekraniukoEfektas {
+  100% {
+    background-color: coral;
+  }
+}
+
 .ekraniukas > .atsakymas {
   display: inline-block;
   float: left;
@@ -48,6 +61,17 @@
   gap: 5px;
 }
 
+.mygtuku-dalis:hover {
+  animation-name: mygtukai;
+  animation-duration: 2s;
+  border-radius: 5%;
+}
+
+@keyframes mygtukai {
+  100% {
+    background-color: coral;
+  }
+}
 .mygtuku-dalis > .button {
   margin: 10px;
   width: 50px;
@@ -62,10 +86,21 @@
 }
 
 .mygtuku-dalis > .button:hover {
-  box-shadow: 1px 2px;
-  background-color: antiquewhite;
+  box-shadow: 1px 2px 1px 1px darkgray;
+  animation-name: buttonix;
+  animation-duration: 1s;
   height: 51px;
   width: 51px;
+}
+
+@keyframes buttonix {
+  50% {
+    background-color: lightcoral;
+  }
+  100% {
+    background-color: coral;
+    transform: rotate(360deg);
+  }
 }
 
 .button.balti {
