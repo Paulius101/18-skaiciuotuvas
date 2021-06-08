@@ -28,7 +28,7 @@
 
 @keyframes ekraniukoEfektas {
   100% {
-    background-color: coral;
+    background-color: rgb(134, 134, 184);
   }
 }
 
@@ -69,7 +69,7 @@
 
 @keyframes mygtukai {
   100% {
-    background-color: coral;
+    background-color: rgb(134, 134, 184);
   }
 }
 .mygtuku-dalis > .button {
