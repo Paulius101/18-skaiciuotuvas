@@ -10,8 +10,8 @@
   transform: translate(-50%, -50%);
   border: none;
   border-radius: 18px;
-  background-color: #eff1f5;
-  box-shadow: 2.5px 5px darkgray;
+  background: linear-gradient(45deg, #e0e2e6, #eff1f5);
+  box-shadow: 2.5px 5px 2px 0px darkgray;
 }
 
 .ekraniukas {
