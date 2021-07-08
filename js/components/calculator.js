@@ -1,7 +1,9 @@
 class Calculator {
     constructor(selector) {
         this.selector = selector;
-
+        this.buttonDOM = null;
+        this.atsakymasDOM = null;
+        this.lygtisDOM = null;
         this.DOM = document.querySelector(selector);
         this.buttonsData = [
             { title: 'C', color: 'sviesus' },
@@ -27,6 +29,7 @@ class Calculator {
         ];
 
         this.init();
+
     }
 
     init() {
@@ -35,6 +38,7 @@ class Calculator {
         }
 
         this.render();
+        this.addEvents();
     }
 
     isValidSelector() {
@@ -48,8 +52,8 @@ class Calculator {
     render() {
         let HTML = `   <main class="calc-turinys">
         <div class="ekraniukas">
-            <div class="atsakymas">45</div>
-            <div class="lygties-dalis">10+15+20=450000</div>
+            <div class="atsakymas"></div>
+            <div class="lygties-dalis"></div>
         </div>
         <div class="mygtuku-dalis">
             <div class="button sviesus">C</div>
@@ -76,6 +80,21 @@ class Calculator {
     </main>`;
 
         this.DOM.insertAdjacentHTML('beforeend', HTML);
+
+        this.buttonDOM = document.querySelectorAll('.button');
+        this.atsakymasDOM = document.querySelector('.atsakymas');
+        this.lygtisDOM = document.querySelector('.lygties-dalis');
+
+    }
+
+    addEvents() {
+        this.buttonDOM.addEventListener('click', e => {
+            //   let lygtis = '';
+            //   for (const mygtukas of )
+            this.lygtisDOM.innerText += this.buttonDOM.innerText;
+            return this.lygtisDOM.innerText
+        })
+
     }
 }
 
