@@ -89,9 +89,9 @@ class Calculator {
 
     addEvents() {
         this.buttonDOM.addEventListener('click', e => {
-            //   let lygtis = '';
-            //   for (const mygtukas of )
-            this.lygtisDOM.innerText += this.buttonDOM.innerText;
+            for (const button of this.buttonDOM) {
+                this.lygtisDOM.innerText += this.buttonDOM.innerText;
+            }
             return this.lygtisDOM.innerText
         })
 
